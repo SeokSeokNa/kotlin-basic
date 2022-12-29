@@ -19,6 +19,7 @@ fun main() {
 
     })
 
+
 }
 
 class Person2 private constructor(
@@ -41,6 +42,7 @@ class Person2 private constructor(
             return Person2(name , MIN_AGE)
         }
 
+        //인터페이스를 상속받아 메소드를 구현함
         override fun log() {
             println("나는 Person2 클래스의 동행객체이다.")
         }

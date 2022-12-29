@@ -12,7 +12,10 @@ class Penguin(
 
     //코틀린에서 프로퍼티에 대해 오버라이딩을 하기위해서는 해당 프로퍼티가 추상 프로퍼티가 아니라면 open 키워드를 붙혀줘야한다.(Animal 클래스에 legCount 프로퍼티에 open 키워드를 붙혀줬음)
     //상위 클래스의 프로퍼티에 있는 getter 를 오버라이딩 하기
-    override val legCount: Int
+    /*
+       공식문서에 따르면 override 한 경우 public private 등 접근지시자를 딱히 명시해주지 않으면 '상위 멤버'의 접근 지시자를 따라간다고 되어 있음
+     */
+    public override val legCount: Int
       get() = super.legCount + this.wingCount
 
 

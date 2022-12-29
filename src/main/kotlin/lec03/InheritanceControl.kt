@@ -2,6 +2,9 @@ package lec03
 
 fun main() {
     Derived(300)
+    val penguin = Penguin("펭귄")
+    println(penguin.act())
+    println(penguin.legCount)
 }
 
 // 추상클래스가 아닌 일반 클래스를 상속받기 위해서는 상위클래스에 "open" 키워드를 꼭 붙혀줘야함
